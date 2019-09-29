@@ -64,7 +64,7 @@ namespace Centipede_V1
             timer.Tick += DispatcherTimer_Tick;
             timer.Interval = new TimeSpan(0, 0, 0, 0, 2);
             timer.Start();
-            fleaBoi=DropFlea();
+            //fleaBoi=DropFlea();
 
             // ensure that keypresses are captured no matter what UI element has the focus
 
@@ -589,7 +589,7 @@ namespace Centipede_V1
 
         private void DispatcherTimer_Tick(object sender, object e)
         {
-            bool shotDisapeered = false, hit = false, hitFlea=false;
+            bool shotDisapeered = false, hit = false;/*, hitFlea=false;*/
 
             bool done = false;
             MovePlayer();
@@ -616,11 +616,11 @@ namespace Centipede_V1
                 {
                     shot = null;
                 }
-                hitFlea = Flea.checkCollision(fleaBoi, flea);
-                if (hitFlea)
-                {
-                    Background.Children.Remove(flea);
-                }
+                //hitFlea = Flea.checkCollision(fleaBoi, flea);
+                //if (hitFlea)
+                //{
+                //    Background.Children.Remove(flea);
+                //}
 
                 // CheckForMushroomCollision(shroom);
             }
