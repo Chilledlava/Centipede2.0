@@ -524,7 +524,7 @@ namespace Centipede_V1
         //    }
         //}
 
-            private void SpawnOneShroom(int x, int y)
+        private void SpawnOneShroom(int x, int y)
         {
             int shroomLeftMargin = x;
             int shroomTopMargin = y;
