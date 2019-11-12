@@ -11,7 +11,7 @@
     <AssemblyName>Centipede_V1</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17763.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -95,6 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Centipede.cs" />
+    <Compile Include="CentipedeMover.cs" />
     <Compile Include="Flea.cs" />
     <Compile Include="GameOverPage.xaml.cs">
       <DependentUpon>GameOverPage.xaml</DependentUpon>
@@ -120,6 +122,9 @@
     <Content Include="Assets\Cenitpede Sprites to .png\600.png" />
     <Content Include="Assets\Cenitpede Sprites to .png\900.png" />
     <Content Include="Assets\Cenitpede Sprites to .png\centipedebackground_resize.jpg" />
+    <Content Include="Assets\Cenitpede Sprites to .png\Centipede_Body.png" />
+    <Content Include="Assets\Cenitpede Sprites to .png\Centipede_Head_A_Down - Copy.png" />
+    <Content Include="Assets\Cenitpede Sprites to .png\Centipede_Head_A_Left.png" />
     <Content Include="Assets\Cenitpede Sprites to .png\Centipede_Head_A.png" />
     <Content Include="Assets\Cenitpede Sprites to .png\Centipede_Head_B.png" />
     <Content Include="Assets\Cenitpede Sprites to .png\Centipede_Head_C.png" />
