@@ -33,6 +33,7 @@ namespace Centipede_V1
         private Image flea;        
         private int timesTicked = 1;      
         private List<Shroom> ShroomList;
+        private Flea ActiveFlea;
         // use for either controller support or keyboard support (if done correctly)
 
         private Gamepad controller;
@@ -43,8 +44,8 @@ namespace Centipede_V1
             List<Shroom> ShroomList = new List<Shroom>();
             List<Shroom> tempshrooms = new List<Shroom>();
             SpawnShrooms();
-            
-            
+
+           
         }
 
         public MainPage()
@@ -64,7 +65,6 @@ namespace Centipede_V1
             timer.Tick += DispatcherTimer_Tick;
             timer.Interval = new TimeSpan(0, 0, 0, 0, 2);
             timer.Start();
-            //fleaBoi=DropFlea();
 
             // ensure that keypresses are captured no matter what UI element has the focus
 
@@ -478,27 +478,108 @@ namespace Centipede_V1
             random = new Random();
 
             int fleaLeftMargin = random.Next(0, 29) * 16;
-            int fleaTopMargin = random.Next(0, 31) * 16;
+            int fleaTopMargin = 0;
 
             BitmapImage bitFlea = new BitmapImage(new Uri("ms-appx:/Assets/Cenitpede Sprites to .png/Flea_A.png"));
 
             flea.Stretch = Stretch.None;
             flea.Source = bitFlea;
-
+            flea.AccessKey = "flea";
             flea.Width = 16;
             flea.Height = 16;
             flea.VerticalAlignment = VerticalAlignment.Top;
             flea.HorizontalAlignment = HorizontalAlignment.Left;
-            flea.Margin = new Thickness(fleaLeftMargin,0 , 0, 0);
+            flea.Margin = new Thickness(fleaLeftMargin, fleaTopMargin, 0, 0);
 
             Background.Children.Add(flea);
 
-            Flea fleaBoi = new Flea(fleaLeftMargin,fleaTopMargin,flea);
-            
+            Flea fleaBoi = new Flea(fleaTopMargin, fleaLeftMargin, flea);
+
             return fleaBoi;
 
         }
-       private bool CheckForBulletWallCollision(Image shot)
+
+        private void fleaMovement()
+        {
+            if (ActiveFlea != null)
+            {
+                if (ActiveFlea.hp == 2)
+                {
+                    int x = (int)ActiveFlea.locationX;
+                    int y = (int)ActiveFlea.locationY;
+                    double newY = ActiveFlea.locationY + 8;
+                    ActiveFlea.mainImage.Margin = new Thickness(ActiveFlea.locationX, newY, 0, 0);
+                    ActiveFlea.locationY = newY;
+
+                    if (ActiveFlea.locationY < 450)
+                    {
+                        Random random = new Random();
+                        int number = random.Next(1, 100);
+                        if (number % 8 == 0)
+                        {
+                            SpawnOneShroom(x, y);
+                        }
+                    }
+                }
+                else
+                {
+                    double newY = ActiveFlea.locationY + 12;
+                    ActiveFlea.mainImage.Margin = new Thickness(ActiveFlea.locationX, newY, 0, 0);
+                    ActiveFlea.locationY = newY;
+                }
+                if( ActiveFlea.locationY >= 496)
+                {
+                    Background.Children.Remove(flea);
+                    ActiveFlea = null;
+                }
+            }
+        }
+       private void fleaCollision()
+        {
+            if (ActiveFlea != null)
+            {
+                double p = ActiveFlea.locationY;
+
+                if (380 > p)
+                {
+                    return;
+                }
+                if (Player.Margin.Top <= ActiveFlea.locationY + 16 && (Player.Margin.Top) <= (ActiveFlea.locationY + 5))
+                {
+
+                    if (Player.Margin.Left+ 16 >= ActiveFlea.locationX)
+                    {
+                        Background.Children.Remove(flea);
+                        ActiveFlea = null;
+                        //lives -= 1;
+                        //if(lives == 0){gameover};
+
+                    }
+                }
+            }
+
+        }
+
+        public void checkMushrooms()
+        {
+            int amount = 0;
+            foreach (Shroom shroom in ShroomList)
+            {
+
+                if (shroom.locationY > 380)
+                {
+                    amount += 1;
+                }
+            }
+            if (amount < 5 && ActiveFlea == null)
+            {
+                ActiveFlea = DropFlea();
+            }
+        }
+
+
+
+        private bool CheckForBulletWallCollision(Image shot)
         {
             bool destroyed = false;
             // if bullet hits the bullet wall it gets removed from the grid
@@ -510,7 +591,6 @@ namespace Centipede_V1
             }
             return destroyed;
         }
-
 
         //private void CheckForMushroomCollision(Image shroom)
         //{
@@ -524,13 +604,13 @@ namespace Centipede_V1
         //    }
         //}
 
-            private void SpawnOneShroom(int x, int y)
+        private void SpawnOneShroom(int x, int y)
         {
             int shroomLeftMargin = x;
             int shroomTopMargin = y;
-
+            shroom = new Image();
             BitmapImage bitShroom = new BitmapImage(new Uri("ms-appx:/Assets/Cenitpede Sprites to .png/Mushroom_Normal_Full.png"));
-
+            
             shroom.Stretch = Stretch.None;
             shroom.Source = bitShroom;
 
@@ -589,7 +669,7 @@ namespace Centipede_V1
 
         private void DispatcherTimer_Tick(object sender, object e)
         {
-            bool shotDisapeered = false, hit = false;/*, hitFlea=false;*/
+            bool shotDisapeered = false, hit = false, hitFlea = false;
 
             bool done = false;
             MovePlayer();
@@ -599,31 +679,46 @@ namespace Centipede_V1
                 shot.Margin = new Thickness(shot.Margin.Left, shot.Margin.Top - 20, 0, 0);
                 List<Shroom> DeleteList = new List<Shroom>();
                 DeleteList = Shroom.checkCollisionShroom(ShroomList, shot, out hit);
-                if (hit)
+                
+                 foreach (Shroom shroom in DeleteList)
+                {
+                    Background.Children.Remove(shroom.mainImage);
+                }
+
+                DeleteList.Clear();
+                if (ActiveFlea != null) 
+                {
+                    hitFlea = ActiveFlea.checkCollision(shot);
+                }
+
+                if (ActiveFlea != null && ActiveFlea.hp <= 0 )
+                {
+                    Background.Children.Remove(flea);
+                    ActiveFlea = null;
+                }
+
+
+                if (hit || hitFlea)
                 {
                     Background.Children.Remove(shot);
                     shot = null;
                     CanShoot = true;
                 }
-                 foreach (Shroom shroom in DeleteList)
-                {
-                    Background.Children.Remove(shroom.mainImage);
-                }
-                DeleteList.Clear();
+
+
                 if (shot != null)
                     shotDisapeered = CheckForBulletWallCollision(shot);
                 if (shotDisapeered)
                 {
                     shot = null;
                 }
-                //hitFlea = Flea.checkCollision(fleaBoi, flea);
-                //if (hitFlea)
-                //{
-                //    Background.Children.Remove(flea);
-                //}
-
-                // CheckForMushroomCollision(shroom);
+             //   CheckForMushroomCollision(shroom);
+           
             }
+            checkMushrooms(); // checks if there are 5 mushrooms in the playing field in order to spawn flea
+            fleaMovement(); // moves the flea
+            fleaCollision();
+            
             if (GameOver)
             {
                 this.Frame.Navigate(typeof(GameOverPage));
@@ -631,6 +726,9 @@ namespace Centipede_V1
             timesTicked += 1;
 
         }
+
+
+       
 
     }
 }
