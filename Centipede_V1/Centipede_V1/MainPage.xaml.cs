@@ -30,7 +30,9 @@ namespace Centipede_V1
         private Image shot;
         private Random random;
         private Image shroom;
-        private Image flea;        
+        private Image spider;
+        private Image flea;
+        public Spider spiderSpawn;
         private int timesTicked = 1;      
         private List<Shroom> ShroomList;
         // use for either controller support or keyboard support (if done correctly)
@@ -65,6 +67,8 @@ namespace Centipede_V1
             timer.Interval = new TimeSpan(0, 0, 0, 0, 2);
             timer.Start();
             //fleaBoi=DropFlea();
+            // testing if spider spawns
+           // DropSpider();
 
             // ensure that keypresses are captured no matter what UI element has the focus
 
@@ -192,6 +196,7 @@ namespace Centipede_V1
                     CanShoot = false;
 
                     makeShot();
+                    
                 }
             }
         }
@@ -438,6 +443,8 @@ namespace Centipede_V1
 
                 makeShot();
 
+                spiderSpawn = DropSpider();
+
                 // comment out later since the walls will be invisible 0_o
                 TopWall.Fill = GetRandomColor();
                 BottomWall.Fill = GetRandomColor();
@@ -498,6 +505,36 @@ namespace Centipede_V1
             return fleaBoi;
 
         }
+
+        public Spider DropSpider()
+        {
+            spider = new Image();
+            random = new Random();
+            int[] possiblePositions = { 0, 450 };
+            int randomIndex;
+            randomIndex = random.Next(0, 2);
+
+            int spiderLeftMargin = possiblePositions[randomIndex];
+            int spiderTopMargin = (18) * 16;
+
+            BitmapImage bitFlea = new BitmapImage(new Uri("ms-appx:/Assets/Cenitpede Sprites to .png/Spider_A.png"));
+
+            spider.Stretch = Stretch.None;
+            spider.Source = bitFlea;
+
+            spider.Width = 30;
+            spider.Height = 16;
+            spider.VerticalAlignment = VerticalAlignment.Top;
+            spider.HorizontalAlignment = HorizontalAlignment.Left;
+            spider.Margin = new Thickness(spiderLeftMargin, spiderTopMargin, 0, 0);
+
+            Background.Children.Add(spider);
+
+            Spider SpiderVar = new Spider(spiderLeftMargin, spiderTopMargin, spider);
+
+            return SpiderVar;
+        }
+
        private bool CheckForBulletWallCollision(Image shot)
         {
             bool destroyed = false;
@@ -533,7 +570,7 @@ namespace Centipede_V1
 
             shroom.Stretch = Stretch.None;
             shroom.Source = bitShroom;
-
+            
             shroom.Width = 16;
             shroom.Height = 16;
             shroom.VerticalAlignment = VerticalAlignment.Top;
@@ -589,7 +626,7 @@ namespace Centipede_V1
 
         private void DispatcherTimer_Tick(object sender, object e)
         {
-            bool shotDisapeered = false, hit = false;/*, hitFlea=false;*/
+            bool shotDisapeered = false, hit = false, hitSpider = false;/* hitFlea=false;*/
 
             bool done = false;
             MovePlayer();
@@ -623,6 +660,7 @@ namespace Centipede_V1
                 //}
 
                 // CheckForMushroomCollision(shroom);
+                hitSpider = Spider.checkCollision(spiderSpawn, shot);
             }
             if (GameOver)
             {

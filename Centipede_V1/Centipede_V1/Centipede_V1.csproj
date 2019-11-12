@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Spider.cs" />
     <Compile Include="Flea.cs" />
     <Compile Include="GameOverPage.xaml.cs">
       <DependentUpon>GameOverPage.xaml</DependentUpon>
