@@ -7,14 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Canvas x:ConnectionId='1' x:Name="Canvas_background" HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="960" Background="#FFF5F3B6">
-        <Image x:ConnectionId='2' x:Name="CentipedeBackground" Height="628" Canvas.Left="5" Canvas.Top="-60" Width="644" Source="Assets\Cenitpede Sprites to .png\centipedebackground_resize.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Image x:ConnectionId='2' x:Name="CentipedeBackground" Height="377" Canvas.Left="20" Width="952" Source="Assets\Cenitpede Sprites to .png\centipedebackground_resize.jpg" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Top="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-0.365"/>
             </Image.RenderTransform>
         </Image>
-        <Button x:ConnectionId='3' x:Name="startButton" Content="Start" Height="106" Canvas.Left="620" Canvas.Top="90" Width="292" FontSize="72" FontFamily="TechnicBold" Foreground="#FFEE2C13"                          />
-        <TextBlock x:ConnectionId='4' x:Name="Semester_Box" Height="50" Canvas.Left="590" Canvas.Top="238" Text="CIS 297- Winter 2018" TextWrapping="Wrap" Width="356"  Foreground="#FFEE2C13" FontFamily="TechnicBold" FontSize="36"/>
-        <TextBlock x:ConnectionId='5' x:Name="Credits_Box" Canvas.Left="602" Canvas.Top="304" Text="Justin Azzopardi Ashley Baker   Chris Thompson  Jourdan Watson  " TextWrapping="Wrap" Height="176" RenderTransformOrigin="0.5,0.5" Width="278" Foreground="#FFEE2C13" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="36" FontFamily="TechnicBold" FontWeight="Normal">
+        <Button x:ConnectionId='3' x:Name="startButton" Content="Start" Height="106" Canvas.Left="344" Canvas.Top="409" Width="292" FontSize="72" FontFamily="TechnicBold" Foreground="#FFEE2C13"                           HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='4' x:Name="Credits_Box" Canvas.Left="602" Canvas.Top="304" Text="" TextWrapping="Wrap" Height="176" RenderTransformOrigin="0.5,0.5" Width="278" Foreground="#FFEE2C13" UseLayoutRounding="False" d:LayoutRounding="Auto" FontSize="36" FontFamily="TechnicBold" FontWeight="Normal">
             <TextBlock.RenderTransform>
                 <CompositeTransform ScaleX="-1" ScaleY="-1" Rotation="180.029"/>
             </TextBlock.RenderTransform>

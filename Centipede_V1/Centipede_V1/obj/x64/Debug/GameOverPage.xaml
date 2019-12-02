@@ -8,10 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas x:ConnectionId='1' x:Name="background" HorizontalAlignment="Left" Height="539" Margin="1,1,0,0" VerticalAlignment="Top" Width="959" Background="#FFF5F3B6">
-            <TextBlock Canvas.Left="259" Canvas.Top="158" Text="Game Over!" TextWrapping="Wrap" Height="180" Width="420" FontFamily="Stencil" FontSize="72"/>
-            <TextBlock x:ConnectionId='2' x:Name="score_box" Canvas.Left="265" Canvas.Top="336" Text="Score:" TextWrapping="Wrap" Height="97" Width="227" FontFamily="Stencil" FontSize="36"/>
-            <TextBox x:ConnectionId='3' x:Name="scorelabel_box" Canvas.Left="429" Canvas.Top="338" Text="0" Height="38" Width="193" FontFamily="Stencil" FontSize="36" SelectionHighlightColor="#00000000" Background="#00000000" BorderBrush="#00000000"/>
+        <Canvas x:ConnectionId='1' x:Name="background" HorizontalAlignment="Center" Height="999" VerticalAlignment="Center" Width="1499" Background="#FFF5F3B6">
+            <TextBlock Canvas.Left="539" Canvas.Top="300" Text="Game Over!" TextWrapping="Wrap" Height="180" Width="420" FontFamily="Stencil" FontSize="72" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <TextBlock x:ConnectionId='2' x:Name="score_box" Canvas.Left="579" Canvas.Top="529" Text="Score:" TextWrapping="Wrap" Height="97" Width="227" FontFamily="Stencil" FontSize="36" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <TextBox x:ConnectionId='3' x:Name="scorelabel_box" Canvas.Left="733" Canvas.Top="531" Text="0" Height="38" Width="193" FontFamily="Stencil" FontSize="36" SelectionHighlightColor="#00000000" Background="#00000000" BorderBrush="#00000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </Canvas>
 
     </Grid>

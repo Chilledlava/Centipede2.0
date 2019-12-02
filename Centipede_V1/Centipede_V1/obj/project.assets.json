@@ -18112,6 +18112,7 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "build/Microsoft.Net.Native.Compiler.props",
         "build/Microsoft.Net.Native.Compiler.targets",
         "microsoft.net.native.compiler.1.7.3.nupkg.sha512",
@@ -19012,6 +19013,7 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "build/Microsoft.Net.Native.SharedLibrary-arm.props",
         "build/Microsoft.Net.Native.SharedLibrary-arm.targets",
         "microsoft.net.native.sharedlibrary-arm.1.7.0.nupkg.sha512",
@@ -19412,6 +19414,7 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "build/Microsoft.Net.Native.SharedLibrary-x64.props",
         "build/Microsoft.Net.Native.SharedLibrary-x64.targets",
         "microsoft.net.native.sharedlibrary-x64.1.7.0.nupkg.sha512",
@@ -19812,6 +19815,7 @@
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "build/Microsoft.Net.Native.SharedLibrary-x86.props",
         "build/Microsoft.Net.Native.SharedLibrary-x86.targets",
         "microsoft.net.native.sharedlibrary-x86.1.7.0.nupkg.sha512",
@@ -22775,6 +22779,7 @@
       "path": "runtime.win7.system.private.uri/4.0.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
@@ -25212,6 +25217,7 @@
       "path": "system.private.servicemodel/4.1.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "ref/netstandard/_._",
@@ -26719,6 +26725,7 @@
       "path": "system.servicemodel.duplex/4.0.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -26741,6 +26748,7 @@
       "path": "system.servicemodel.http/4.1.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -26781,6 +26789,7 @@
       "path": "system.servicemodel.nettcp/4.1.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -26806,6 +26815,7 @@
       "path": "system.servicemodel.primitives/4.1.1",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -26846,6 +26856,7 @@
       "path": "system.servicemodel.security/4.0.2",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net45/_._",
@@ -27688,11 +27699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Documents\\GitHub\\Centipede2.0\\Centipede_V1\\Centipede_V1\\Centipede_V1.csproj",
+      "projectUniqueName": "C:\\Users\\justi\\OneDrive\\Desktop\\Centipede2.0\\Centipede_V1\\Centipede_V1\\Centipede_V1.csproj",
       "projectName": "Centipede_V1",
-      "projectPath": "C:\\Users\\justi\\OneDrive\\Documents\\GitHub\\Centipede2.0\\Centipede_V1\\Centipede_V1\\Centipede_V1.csproj",
+      "projectPath": "C:\\Users\\justi\\OneDrive\\Desktop\\Centipede2.0\\Centipede_V1\\Centipede_V1\\Centipede_V1.csproj",
       "packagesPath": "C:\\Users\\justi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\justi\\OneDrive\\Documents\\GitHub\\Centipede2.0\\Centipede_V1\\Centipede_V1\\obj\\",
+      "outputPath": "C:\\Users\\justi\\OneDrive\\Desktop\\Centipede2.0\\Centipede_V1\\Centipede_V1\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
