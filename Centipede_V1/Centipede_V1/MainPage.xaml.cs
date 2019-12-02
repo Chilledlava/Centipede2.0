@@ -36,7 +36,8 @@ namespace Centipede_V1
         int amountOfShrooms;
         int timesKilled = 0;
         private CentipedeMover centipede;
-        public Spider spiderSpawn;
+        Spider spiderSpawn;
+        private Spider ActiveSpider;
         private Image spider;
         private Flea ActiveFlea;
         // use for either controller support or keyboard support (if done correctly)
@@ -450,13 +451,13 @@ namespace Centipede_V1
                 makeShot();
 
                 //test if spawning spider works
-                spiderSpawn = DropSpider();
+                //spiderSpawn = DropSpider();
 
                 // comment out later since the walls will be invisible 0_o
                 TopWall.Fill = GetRandomColor();
-                BottomWall.Fill = GetRandomColor();
-                LeftWall.Fill = GetRandomColor();
-                RightWall.Fill = GetRandomColor();
+                BottomWall.Fill = GetRandomColor(); //#FF111BF1
+                LeftWall.Fill = GetRandomColor(); //#FF43E414
+                RightWall.Fill = GetRandomColor(); // #FFDCFF00
             }
         }
 
@@ -591,7 +592,7 @@ namespace Centipede_V1
             }
         }
 
-        public Spider DropSpider()
+        Spider DropSpider()
         {
             spider = new Image();
             random = new Random();
@@ -602,10 +603,10 @@ namespace Centipede_V1
             int spiderLeftMargin = possiblePositions[randomIndex];
             int spiderTopMargin = (18) * 16;
 
-            BitmapImage bitFlea = new BitmapImage(new Uri("ms-appx:/Assets/Cenitpede Sprites to .png/Spider_A.png"));
+            BitmapImage bitSpider = new BitmapImage(new Uri("ms-appx:/Assets/Cenitpede Sprites to .png/Spider_A.png"));
 
             spider.Stretch = Stretch.None;
-            spider.Source = bitFlea;
+            spider.Source = bitSpider;
 
             spider.Width = 30;
             spider.Height = 16;
@@ -618,6 +619,71 @@ namespace Centipede_V1
             Spider SpiderVar = new Spider(spiderLeftMargin, spiderTopMargin, spider);
 
             return SpiderVar;
+        }
+
+        private void spiderMovement()
+        {
+            bool hasTouchedBottom = false;
+
+            if (ActiveSpider != null)
+            {
+                if (ActiveSpider.hp == 1)
+                {
+                    int x = (int)ActiveSpider.locationX;
+                    int y = (int)ActiveSpider.locationY;
+                    
+                    double newY;
+
+                    if (hasTouchedBottom)
+                    {
+                       newY = ActiveSpider.locationY + 5;
+                    }
+                    else
+                    {
+                        newY = ActiveSpider.locationY - 5;
+                    }
+                    
+                    ActiveSpider.mainImage.Margin = new Thickness(ActiveSpider.locationX, newY, 0, 0);
+                    ActiveSpider.locationY = newY;
+
+                    if (ActiveSpider.locationY < 288)
+                    {
+                        hasTouchedBottom = false;
+                    }
+
+
+                    if (ActiveSpider.locationY >= 496)
+                    {
+                        hasTouchedBottom = true;
+                    }
+                }
+            }
+        }
+
+        private void spiderCollision()
+        {
+            if (ActiveSpider != null)
+            {
+                double p = ActiveSpider.locationY;
+
+                if (380 > p)
+                {
+                    return;
+                }
+                if (Player.Margin.Top <= ActiveSpider.locationY + 16 && (Player.Margin.Top) <= (ActiveSpider.locationY + 5))
+                {
+
+                    if (Player.Margin.Left + 16 >= ActiveSpider.locationX)
+                    {
+                        Background.Children.Remove(flea);
+                        ActiveSpider = null;
+                        //lives -= 1;
+                        //if(lives == 0){gameover};
+
+                    }
+                }
+            }
+
         }
 
         private bool CheckForBulletWallCollision(Image shot)
@@ -883,8 +949,21 @@ namespace Centipede_V1
                     ActiveFlea = null;
                 }
 
+                if (ActiveSpider != null)
+                {
+                    hitSpider = ActiveSpider.checkCollision(shot);
+                }
 
-                if (hit || hitFlea)
+                if (ActiveSpider != null && ActiveSpider.hp <= 0)
+                {
+                    Background.Children.Remove(flea);
+                    ActiveSpider = null;
+                }
+
+
+
+
+                if (hit || hitFlea || hitSpider)
                 {
                     Background.Children.Remove(shot);
                     shot = null;
@@ -920,11 +999,13 @@ namespace Centipede_V1
                     shot = null;
                 }
                 
-                hitSpider = Spider.checkCollision(spiderSpawn, shot);
+               
             }
             checkMushrooms(); // checks if there are 5 mushrooms in the playing field in order to spawn flea
             fleaMovement(); // moves the flea
             fleaCollision();
+            spiderMovement(); // moves the active spider
+            spiderCollision(); //checks if the spider was hit
 
             if (centipede.amount == 0)
             {

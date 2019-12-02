@@ -8,32 +8,37 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Centipede_V1
 {
-    public class Spider
+    class Spider
     {
         public Spider(int top, int left, Image pic)
         {
             locationX = top;
             locationY = left;
             mainImage = pic;
+            hp = 1;
 
         }
         public Spider()
         {
 
         }
-        public double locationX { get; }
-        public double locationY { get; }
+
+        public double locationX { get; set; }
+        public double locationY { get; set; }
         public Image mainImage { get; }
-        public static bool checkCollision(Spider spider, Image shot)
+        public int hp { get; private set; }
+        public int points = 600;
+
+        public bool checkCollision(Image shot)
         {
             bool hit = false;
             if (shot != null)
             {
-                if (shot.Margin.Left >= spider.locationX && spider.locationX <= (shot.Margin.Left + 16))
+                if (shot.Margin.Left >= locationX && locationX <= (shot.Margin.Left + 16))
                 {
-                    if (shot.Margin.Top <= spider.locationY && (spider.locationY + 5) <= (shot.Margin.Top + 16))
+                    if (shot.Margin.Top <= locationY && (locationY + 5) <= (shot.Margin.Top + 16))
                     {
-                        //😍 Valid Code.
+                        hp -= 1;
 
                         hit = true;
 
@@ -43,4 +48,5 @@ namespace Centipede_V1
             return hit;
         }
     }
+
 }

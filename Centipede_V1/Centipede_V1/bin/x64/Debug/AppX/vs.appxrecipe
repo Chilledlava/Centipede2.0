@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>bed871b6-22c2-426f-b752-8e941eb1d56f</PackageIdentityName>
     <PackageIdentityPublisher>CN=ashleybm</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>3AE970751AD91455BEE3AA26426653A290FC4F78A911F37D9C9A039791098C2C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bed871b6-22c2-426f-b752-8e941eb1d56f_1.0.0.0_x64__5ykfqf919bxj6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bed871b6-22c2-426f-b752-8e941eb1d56f_5ykfqf919bxj6!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-12-02T01:00:58.566</Modified>
+      <Modified>2019-12-02T19:00:28.975</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Centipede_V1.exe">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Centipede_V1.exe">
       <PackagePath>entrypoint\Centipede_V1.exe</PackagePath>
-      <Modified>2019-12-02T01:00:58.043</Modified>
+      <Modified>2019-12-02T19:00:28.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -494,217 +494,217 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T03:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\300.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\300.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\300.png</PackagePath>
       <Modified>2019-10-16T19:59:28.384</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\600.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\600.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\600.png</PackagePath>
       <Modified>2019-10-16T19:59:28.385</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\900.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\900.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\900.png</PackagePath>
       <Modified>2019-10-16T19:59:28.386</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Body.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Body.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Body.png</PackagePath>
       <Modified>2019-12-01T22:51:54.195</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_A_Down - Copy.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_A_Down - Copy.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_A_Down - Copy.png</PackagePath>
       <Modified>2019-12-01T22:51:54.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_A_Left.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_A_Left.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_A_Left.png</PackagePath>
       <Modified>2019-12-01T22:51:54.208</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_A.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_A.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_A.png</PackagePath>
       <Modified>2019-12-01T22:51:54.202</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_B.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_B.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_B.png</PackagePath>
       <Modified>2019-10-16T19:59:28.388</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_C.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_C.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_C.png</PackagePath>
       <Modified>2019-10-16T19:59:28.389</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_D.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_D.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_D.png</PackagePath>
       <Modified>2019-10-16T19:59:28.390</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_E.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_E.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_E.png</PackagePath>
       <Modified>2019-10-16T19:59:28.392</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_F.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_F.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_F.png</PackagePath>
       <Modified>2019-10-16T19:59:28.393</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_G.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Centipede_Head_G.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Centipede_Head_G.png</PackagePath>
       <Modified>2019-10-16T19:59:28.394</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_A.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_A.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Flea_A.png</PackagePath>
       <Modified>2019-10-16T19:59:28.395</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_B.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_B.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Flea_B.png</PackagePath>
       <Modified>2019-10-16T19:59:28.396</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_C.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_C.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Flea_C.png</PackagePath>
       <Modified>2019-10-16T19:59:28.397</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_D.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Flea_D.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Flea_D.png</PackagePath>
       <Modified>2019-10-16T19:59:28.398</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Missile.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Missile.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Missile.png</PackagePath>
       <Modified>2019-10-16T19:59:28.399</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_25.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_25.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Normal_25.png</PackagePath>
       <Modified>2019-10-16T19:59:28.400</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_50.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_50.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Normal_50.png</PackagePath>
       <Modified>2019-10-16T19:59:28.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_75.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_75.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Normal_75.png</PackagePath>
       <Modified>2019-10-16T19:59:28.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_Full.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Normal_Full.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Normal_Full.png</PackagePath>
       <Modified>2019-10-16T19:59:28.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_25.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_25.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Poison_25.png</PackagePath>
       <Modified>2019-10-16T19:59:28.405</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_50.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_50.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Poison_50.png</PackagePath>
       <Modified>2019-10-16T19:59:28.407</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_75.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_75.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Poison_75.png</PackagePath>
       <Modified>2019-10-16T19:59:28.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_Full.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Mushroom_Poison_Full.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Mushroom_Poison_Full.png</PackagePath>
       <Modified>2019-10-16T19:59:28.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Player.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Player.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Player.png</PackagePath>
       <Modified>2019-10-16T19:59:28.411</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_A.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_A.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Scorpion_A.png</PackagePath>
       <Modified>2019-10-16T19:59:28.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_B.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_B.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Scorpion_B.png</PackagePath>
       <Modified>2019-10-16T19:59:28.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_C.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_C.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Scorpion_C.png</PackagePath>
       <Modified>2019-10-16T19:59:28.414</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_D.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Scorpion_D.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Scorpion_D.png</PackagePath>
       <Modified>2019-10-16T19:59:28.416</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_A.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_A.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_A.png</PackagePath>
       <Modified>2019-10-16T19:59:28.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_B.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_B.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_B.png</PackagePath>
       <Modified>2019-10-16T19:59:28.418</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_C.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_C.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_C.png</PackagePath>
       <Modified>2019-10-16T19:59:28.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_D.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_D.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_D.png</PackagePath>
       <Modified>2019-10-16T19:59:28.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_E.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_E.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_E.png</PackagePath>
       <Modified>2019-10-16T19:59:28.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_F.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_F.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_F.png</PackagePath>
       <Modified>2019-10-16T19:59:28.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_G.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\Spider_G.png">
       <PackagePath>Assets\Cenitpede Sprites to .png\Spider_G.png</PackagePath>
       <Modified>2019-10-16T19:59:28.424</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2019-10-16T19:59:28.509</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-16T19:59:28.538</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-16T19:59:28.602</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-16T19:59:28.603</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-16T19:59:28.605</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-16T19:59:28.606</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-16T19:59:28.607</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\centipedebackground_resize.jpg">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Assets\Cenitpede Sprites to .png\centipedebackground_resize.jpg">
       <PackagePath>Assets\Cenitpede Sprites to .png\centipedebackground_resize.jpg</PackagePath>
       <Modified>2019-10-16T19:59:28.436</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-10-16T19:59:28.640</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Centipede_V1.xr.xml">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Centipede_V1.xr.xml">
       <PackagePath>Centipede_V1.xr.xml</PackagePath>
-      <Modified>2019-12-02T00:59:11.207</Modified>
+      <Modified>2019-12-02T19:00:28.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2019-12-02T00:07:23.121</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\GameOverPage.xbf">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\GameOverPage.xbf">
       <PackagePath>GameOverPage.xbf</PackagePath>
       <Modified>2019-12-02T00:59:11.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-12-02T00:07:23.122</Modified>
+      <Modified>2019-12-02T19:00:28.114</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\StartPage.xbf">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\StartPage.xbf">
       <PackagePath>StartPage.xbf</PackagePath>
       <Modified>2019-12-02T00:59:11.241</Modified>
     </AppxPackagedFile>
@@ -712,13 +712,13 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2018-10-23T04:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-12-02T00:17:34.254</Modified>
+      <Modified>2019-12-02T18:50:34.927</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Desktop\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Core\Centipede_V1.exe">
+    <AppxPackagedFile Include="C:\Users\justi\OneDrive\Documents\GitHub\Centipede2.0\Centipede_V1\Centipede_V1\bin\x64\Debug\Core\Centipede_V1.exe">
       <PackagePath>Centipede_V1.exe</PackagePath>
-      <Modified>2019-12-02T01:00:58.547</Modified>
+      <Modified>2019-12-02T19:00:28.956</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
