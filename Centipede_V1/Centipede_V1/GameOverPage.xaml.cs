@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Centipede_V1
@@ -22,10 +23,14 @@ namespace Centipede_V1
     /// </summary>
     public sealed partial class GameOverPage : Page
     {
-        private int score;
+        private int score = 0;
+
         public GameOverPage()
         {
             this.InitializeComponent();
+            score = Scoring.getScore();
+            Scoring.recordScore();
+            
         }
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {

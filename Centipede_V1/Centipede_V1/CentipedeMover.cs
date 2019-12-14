@@ -14,7 +14,7 @@ namespace Centipede_V1
         public List<Centipede> parts = new List<Centipede>();
         public int speed = 1; //for easy changing how fast the centipede moves
         public int amount;
-        public int totalCentipedeScore = 0;
+       // public int totalCentipedeScore = 0;
 
         public CentipedeMover(int bodyParts)
         {
@@ -28,8 +28,9 @@ namespace Centipede_V1
             }
         }
 
-        public void checkCentipedeCollision(Image shot, out Boolean hit)
+        public Boolean checkCentipedeCollision(Image shot, out Boolean hit)
         {
+            bool answer = false;
             hit = false;
             for(int i = 0;i < amount; i++)
             {
@@ -38,9 +39,7 @@ namespace Centipede_V1
                 {
                     parts[i].alive = false;
                     if (parts[i].isHead)
-                        totalCentipedeScore += 100;
-                    else
-                        totalCentipedeScore += 10;
+                        answer = true;
 
                     if (i + 1 < amount)
                     {
@@ -55,6 +54,7 @@ namespace Centipede_V1
                     hit = true;
                 }
             }
+            return answer;
         }
 
         

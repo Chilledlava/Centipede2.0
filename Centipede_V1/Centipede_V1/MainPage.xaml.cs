@@ -53,7 +53,8 @@ namespace Centipede_V1
             centipede = new CentipedeMover(9 +(2*timesKilled));
             centipede.speed = centipede.speed + timesKilled;
             spawnCentipede();
-
+            
+            
 
         }
 
@@ -968,17 +969,33 @@ namespace Centipede_V1
                     Background.Children.Remove(shot);
                     shot = null;
                     CanShoot = true;
+                    if (hitFlea)
+                    {
+                        Scoring.increaseScore(200);
+                    }
+                    else if (hitSpider)
+                    {
+                        Scoring.increaseScore(600);
+                    }
                 }
 
                 Boolean hitCentipede = false;
-                if (shot != null)
+                Boolean headShot = false;
+                if (shot != null)//if shot still exists, check if it hit centipede
                 {
-                    centipede.checkCentipedeCollision(shot, out hitCentipede);
+                   headShot =  centipede.checkCentipedeCollision(shot, out hitCentipede);
                 }
 
                 if (hitCentipede)
                 {
-                    
+                    if (headShot)
+                    {
+                        Scoring.increaseScore(100);
+                    }
+                    else
+                    {
+                        Scoring.increaseScore(10);
+                    }
                     CanShoot = true;
                     Background.Children.Remove(shot);
                     shot = null;
@@ -1022,9 +1039,12 @@ namespace Centipede_V1
             {
                 this.Frame.Navigate(typeof(GameOverPage));
             }
+            //scoring label, update score here
             timesTicked += 1;
 
         }
+
+        
 
     }
 }

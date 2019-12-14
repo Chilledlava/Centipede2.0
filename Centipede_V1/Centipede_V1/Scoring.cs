@@ -1,28 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Centipede_V1
 {
-    public class Scoring
+    static public class Scoring
     {
-        private int playerScore;
+        static private int playerScore = 0;
+        
 
-        Scoring()
-        {
-            playerScore = 0;
-        }
-
-        public void increaseScore(int enemyPointValue)
+        static public void increaseScore(int enemyPointValue)
         {
             playerScore += enemyPointValue;
+           
+
         }
 
-        public int getScore()
+        static public int getScore()
         {
             return playerScore;
+            
         }
+        
     }
 }
